@@ -13,36 +13,42 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ## Chapter 1 - Introduction to Data
 
-Identify the type of variables (e.g. numerical or categorical; discrete or continuous; ordered or not ordered).
-Identify the relationship between multiple variables (i.e. independent vs. dependent).
-Define variables that are not associated as independent.
-Be able to describe and identify the difference between observational and experimental studies.
-Distinguish between simple random, stratified, and cluster sampling, and recognize the benefits and drawbacks of choosing one sampling scheme over another.
-Identify the four principles of experimental design and recognize their purposes: control any possible con- founders, randomize into treatment and control groups, replicate by using a sufficiently large sample or repeating the experiment, and block any variables that might influence the response.
+- Identify the type of variables (e.g. numerical or categorical; discrete or continuous; ordered or not ordered).  
+- Identify the relationship between multiple variables (i.e. independent vs. dependent).  
+- Define variables that are not associated as independent.  
+- Be able to describe and identify the difference between observational and experimental studies.  
+- Distinguish between simple random, stratified, and cluster sampling, and recognize the benefits and drawbacks of choosing one sampling scheme over another.  
+- Identify the four principles of experimental design and recognize their purposes: control any possible con- founders, randomize into treatment and control groups, replicate by using a sufficiently large sample or repeating the experiment, and block any variables that might influence the response.
+
 ## Chapter 2 - Summarizing Data
-Use appropriate visualizations for different types of data (e.g. histogram, barplot, scatterplot, boxplot, etc.).
-Use different measures of center and spread and be able to describe the robustness of different statistics.
-Describe the shape of distributions vis-a-vis histograms and boxplots.
-Create and interpret contingency and frequency tables (one- and two-way tables).
+
+- Use appropriate visualizations for different types of data (e.g. histogram, barplot, scatterplot, boxplot, etc.).  
+- Use different measures of center and spread and be able to describe the robustness of different statistics.  
+- Describe the shape of distributions vis-a-vis histograms and boxplots.  
+- Create and interpret contingency and frequency tables (one- and two-way tables).  
+
 ## Chapter 3 - Probability
-Define trial, outcome, and sample space.
-Define and describe the law of large numbers.
-Distinguish disjoint (also called mutually exclusive) and independent events.
-Use Venn diagrams to represent events and their probabilities.
-Describe probability distributions.
-Distinguish between marginal and conditional probabilities.
-Use tree diagrams and/or Bayes Theorem to calculate conditional probabilities and probabilities of intersection of non-independent events.
-The expected value of a discrete random variable is computed by adding each outcome weighted by its probability.
+
+- Define trial, outcome, and sample space.  
+- Define and describe the law of large numbers.  
+- Distinguish disjoint (also called mutually exclusive) and independent events.  
+- Use Venn diagrams to represent events and their probabilities.  
+- Describe probability distributions.  
+- Distinguish between marginal and conditional probabilities.  
+- Use tree diagrams and/or Bayes Theorem to calculate conditional probabilities and probabilities of intersection of non-independent events.  
+- The expected value of a discrete random variable is computed by adding each outcome weighted by its probability.  
 $$ E(X)=\mu=\sum_{i=1}^{k}{{x}_{i}P\left(X={x}_{i}\right)} $$
-The variance of a discrete random variable is computed by adding each squared deviation of an outcome from the expected value weighted by its probability. The standard deviation is the square root of the variance.
+- The variance of a discrete random variable is computed by adding each squared deviation of an outcome from the expected value weighted by its probability. The standard deviation is the square root of the variance.  
 $$ Var(X)={\sigma}^{2}=\sum_{i=1}^{k}{{\left({x}_{i}-\mu\right)}P\left(X={x}_{i}\right) } $$
-The average of a linear combination of discrete random variables is computed as the sum of their averages, weighted by the constant multipliers.
-The variance of a linear combination of independent discrete random variables is computed as the sum of their variances, weighted by the square of the constant multipliers.
-The distribution of a continuous random variable is described by the probability density function.
-The total area under the density curve is 1.
-Probabilities under the density curve can be calculated as the area under the curve.
-The probability of a continuous random variable being exactly equal to a value is 0, since there is no area under the curve at a given location.
+- The average of a linear combination of discrete random variables is computed as the sum of their averages, weighted by the constant multipliers.  
+- The variance of a linear combination of independent discrete random variables is computed as the sum of their variances, weighted by the square of the constant multipliers.  
+- The distribution of a continuous random variable is described by the probability density function.  
+- The total area under the density curve is 1.  
+- Probabilities under the density curve can be calculated as the area under the curve.  
+- The probability of a continuous random variable being exactly equal to a value is 0, since there is no area under the curve at a given location.  
+
 ## Chapter 4 - Distributions of Random Variables
+
 Define the standardized (Z) score of a data point as the number of standard deviations it is away from the mean: $Z = \frac{x - \mu}{\sigma}$.
 Use the Z score
 if the distribution is normal: to determine the percentile score of a data point (using technology or normal probability tables)
@@ -132,10 +138,7 @@ Define population proportion $p$ (parameter) and sample proportion $\hat{p}$ (po
 Calculate the sampling variability of the proportion, the standard error, as [ SE = \sqrt{\frac{p(1-p)}{n}}, ] where $p$ is the population proportion.
 Note that when the population proportion $p$ is not known (almost always), this can be estimated using the sample proportion, $SE = \sqrt{\frac{\hat{p}(1-\hat{p})}{n}}$.
 Recognize that the Central Limit Theorem (CLT) is about the distribution of point estimates, and that given certain conditions, this distribution will be nearly normal.
-In the case of the proportion the CLT tells us that if
-
-
-the observations in the sample are independent,
+In the case of the proportion the CLT tells us that if the observations in the sample are independent,
 the sample size is sufficiently large (checked using the success/failure condition: $np \ge 10$ and $n(1-p) \ge 10$),
 then the distribution of the sample proportion will be nearly normal, centered at the true population proportion and with a standard error of $\sqrt{\frac{p(1-p)}{n}}$. [ \hat{p} \sim N \left( mean = p, SE = \sqrt{\frac{p(1-p)}{n}} \right) ]
 Note that if the CLT doesn’t apply and the sample proportion is low (close to 0) the sampling distribution will likely be right skewed, if the sample proportion is high (close to 1) the sampling distribution will likely be left skewed.
