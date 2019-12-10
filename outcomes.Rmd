@@ -161,9 +161,9 @@ $H_A:$ The distribution of the variable does not follow the hypothesized distrib
 - Calculate the chi-square test statistic as $\chi = \sum_{i = 1}^{k} \frac{(\text{observed count} - \text{expected count})^2}{\text{expected count}}$, where $k$ is the number of cells.
 - Note that the chi-square distribution is right skewed with one parameter: degrees of freedom. In the case of a goodness of fit test, $df = # \text{of categories} - 1$.
 - List the conditions necessary for performing a chi-square test (goodness of fit or independence)
-the observations should be independent
-expected counts for each cell should be at least 5
-degrees of freedom should be at least 2 (if not, use methods for evaluating proportions)
+ + the observations should be independent
+ + expected counts for each cell should be at least 5
+ + degrees of freedom should be at least 2 (if not, use methods for evaluating proportions)
 - Describe how to use the chi-square table to obtain a p-value.
 When evaluating the independence of two categorical variables where at least one has more than two levels, use a chi-square test of independence.
 - $H_0:$ The two variables are independent.
@@ -226,19 +226,18 @@ and check if they are met using graphical diagnostics.
 - Plot the explanatory variable ($x$) on the x-axis and the response variable ($y$) on the y-axis, and fit a linear regression model $y = \beta_0 + \beta_1 x$ where $\beta_0$ is the intercept, and $\beta_1$ is the slope.
 - Note that the point estimates (estimated from observed data) for $\beta_0$ and $\beta_1$ are $b_0$ and $b_1$, respectively.
 - When describing the association between two numerical variables, evaluate
-direction: positive ($x \uparrow, y \uparrow$), negative ($x \downarrow, y \uparrow$)
-form: linear or not
-strength: determined by the scatter around the underlying relationship
+ + direction: positive ($x \uparrow, y \uparrow$), negative ($x \downarrow, y \uparrow$)
+ + form: linear or not
+ + strength: determined by the scatter around the underlying relationship
 - Define correlation as the \emph{linear} association between two numerical variables.
 - Note that a relationship that is nonlinear is simply called an association.
 - Note that correlation coefficient ($r$, also called Pearson’s $r$) the following properties:
-the magnitude (absolute value) of the correlation coefficient measures the strength of the linear association between two numerical variables
-the sign of the correlation coefficient indicates the direction of association
-the correlation coefficient is always between -1 and 1, inclusive, with -1 indicating perfect negative linear association, +1 indicating perfect positive linear association, and 0 indicating no \emph{linear} relationship
-the correlation coefficient is unitless
-since the correlation coefficient is unitless, it is not affected by changes in the center or scale of either variable (such as unit conversions)
-the correlation of X with Y is the same as of Y with X
-the correlation coefficient is sensitive to outliers
+ + the magnitude (absolute value) of the correlation coefficient measures the strength of the linear association between two numerical variables
+ + the sign of the correlation coefficient indicates the direction of association
+ + the correlation coefficient is always between -1 and 1, inclusive, with -1 indicating perfect negative linear association, +1 indicating perfect positive linear association, and 0 indicating no \emph{linear} relationship
+ + the correlation coefficient is unitless, since the correlation coefficient is unitless, it is not affected by changes in the center or scale of either variable (such as unit conversions)
+ + the correlation of X with Y is the same as of Y with X
+ + the correlation coefficient is sensitive to outliers
 - Recall that correlation does not imply causation.
 - Define residual ($e$) as the difference between the observed ($y$) and predicted ($\hat{y}$) values of the response variable. $e_i = y_i - \hat{y}_i$
 - Define the least squares line as the line that minimizes the sum of the squared residuals, and list conditions necessary for fitting such line:
