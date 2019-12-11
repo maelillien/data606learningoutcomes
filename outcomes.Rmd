@@ -51,23 +51,23 @@ $$ Var(X)={\sigma}^{2}=\sum_{i=1}^{k}{{\left({x}_{i}-\mu\right)}^{2}P\left(X={x}
 
 - Define the standardized (Z) score of a data point as the number of standard deviations it is away from the mean: $Z = \frac{x - \mu}{\sigma}$.
 - Use the Z score
- + if the distribution is normal: to determine the percentile score of a data point (using technology or normal probability tables)
- + regardless of the shape of the distribution: to assess whether or not the particular observation is considered to be unusual (more than 2 standard deviations away from the mean)
+    + if the distribution is normal: to determine the percentile score of a data point (using technology or normal probability tables)
+    + regardless of the shape of the distribution: to assess whether or not the particular observation is considered to be unusual (more than 2 standard deviations away from the mean)
 - Depending on the shape of the distribution determine whether the median would have a negative, positive, or 0 Z score.
 - Assess whether or not a distribution is nearly normal using the 68-95-99.7\% rule or graphical methods such as a normal probability plot.
- + Reading: Section 4.1 of OpenIntro Statistics
- +  Test yourself: True/False: In a right skewed distribution the Z score of the median is positive.
+    + Reading: Section 4.1 of OpenIntro Statistics
+    +  Test yourself: True/False: In a right skewed distribution the Z score of the median is positive.
 - If X is a random variable that takes the value 1 with probability of success $p$ and 0 with probability of success $1-p$, then $X$ is a Bernoulli random variable.
 - The geometric distribution is used to describe how many trials it takes to observe a success.
 - Define the probability of finding the first success in the $n^{th}$ trial as $(1-p)^{n-1}p$.
- + $\mu = \frac{1}{p}$
- + $\sigma^2 = \frac{1-p}{p^2}$
- + $\sigma = \sqrt{\frac{1-p}{p^2}}$
+    + $\mu = \frac{1}{p}$
+    + $\sigma^2 = \frac{1-p}{p^2}$
+    + $\sigma = \sqrt{\frac{1-p}{p^2}}$
 - Determine if a random variable is binomial using the four conditions:
- + The trials are independent.
- + The number of trials, n, is fixed.
- + Each trial outcome can be classified as a success or failure.
- + The probability of a success, p, is the same for each trial.
+    + The trials are independent.
+    + The number of trials, n, is fixed.
+    + Each trial outcome can be classified as a success or failure.
+    + The probability of a success, p, is the same for each trial.
 - Calculate the number of possible scenarios for obtaining $k$ successes in $n$ trials using the choose function: ${n \choose k} = \frac{n!}{k!~(n - k)!}$.
 - Calculate probability of a given number of successes in a given number of trials using the binomial distribution: $P(k = K) = \frac{n!}{k!~(n - k)!}~p^k~(1-p)^{(n - k)}$.
 - Calculate the expected number of successes in a given number of binomial trials $(\mu = np)$ and its standard deviation $(\sigma = \sqrt{np(1-p)})$.
@@ -81,8 +81,8 @@ $$ Var(X)={\sigma}^{2}=\sum_{i=1}^{k}{{\left({x}_{i}-\mu\right)}^{2}P\left(X={x}
  + Note that when the population proportion $p$ is not known (almost always), this can be estimated using the sample proportion, $SE = \sqrt{\frac{\hat{p}(1-\hat{p})}{n}}$.
 - Standard error measures the variability in point estimates from different samples of the same size and from the same population, i.e. measures the sampling variability.
 - Recognize that when the sample size increases we would expect the sampling variability to decrease.
- + Conceptually: Imagine taking many samples from the population. When sample sizes are large the sample proportion will be much more consistent across samples than when the sample sizes are small.
- + Mathematically: $SE = ???$, when $n$ increases, $SE$ will decrease since $n$ is in the denominator.
+    + Conceptually: Imagine taking many samples from the population. When sample sizes are large the sample proportion will be much more consistent across samples than when the sample sizes are small.
+    + Mathematically: $SE = ???$, when $n$ increases, $SE$ will decrease since $n$ is in the denominator.
 - Notice that sampling distributions of point estimates coming from samples that don’t meet the required conditions for the CLT (about sample size and independence) will not be normal.
 - Define a confidence interval as the plausible range of values for a population parameter.
 - Define the confidence level as the percentage of random samples which yield confidence intervals that capture the true population parameter.
@@ -95,34 +95,34 @@ $$ Var(X)={\sigma}^{2}=\sum_{i=1}^{k}{{\left({x}_{i}-\mu\right)}^{2}P\left(X={x}
 - Recall that independence of observations in a sample is provided by random sampling (in the case of observational studies) or random assignment (in the case of experiments).
 - In addition, the sample should not be \textit{too} large compared to the population, or more precisely, should be smaller than 10\% of the population, since samples that are too large will likely contain observations that are not independent. \end{itemize}
 - Recognize that the nearly normal distribution of the point estimate (as suggested by the CLT) implies that a more precise confidence interval can be calculated as [ point~estimate \pm z^{\star} \times SE, ] where $z^{\star}$ corresponds to the cutoff points in the standard normal distribution to capture the middle XX\% of the data, where XX\% is the desired confidence level.
- + For proportions this is $\bar{x} \pm Z^\star \sqrt{\frac{p(1-p)}{n}}$.
- + Note that $z^{\star}$ is always positive.
+    + For proportions this is $\bar{x} \pm Z^\star \sqrt{\frac{p(1-p)}{n}}$.
+    + Note that $z^{\star}$ is always positive.
 - Define margin of error as the distance required to travel in either direction away from the point estimate when constructing a confidence interval, i.e. $z^{\star} \times SE$.
- + Notice that this corresponds to half the width of the confidence interval.
+    + Notice that this corresponds to half the width of the confidence interval.
 - Interpret a confidence interval as “We are XX\% confident that the true population parameter is in this interval”, where XX\% is the desired confidence level.
- + Note that your interpretation must always be in context of the data – mention what the population is and what the parameter is (mean or proportion).
+    + Note that your interpretation must always be in context of the data – mention what the population is and what the parameter is (mean or proportion).
 - Explain how the hypothesis testing framework resembles a court trial.
 - Recognize that in hypothesis testing we evaluate two competing claims:
- + the null hypothesis, which represents a skeptical perspective or the status quo, and
- + the alternative hypothesis, which represents an alternative under consideration and is often represented by a range of possible parameter values.
+    + the null hypothesis, which represents a skeptical perspective or the status quo, and
+    + the alternative hypothesis, which represents an alternative under consideration and is often represented by a range of possible parameter values.
 - Construction of hypotheses:
- + Always construct hypotheses about population parameters (e.g. population proportion, $p$) and not the sample statistics (e.g. sample proportion, $\hat{p}$). Note that the population parameter is unknown while the sample statistic is measured using the observed data and hence there is no point in hypothesizing about it.
- + Define the null value as the value the parameter is set to equal in the null hypothesis.
- + Note that the alternative hypothesis might be one-sided ($\mu$ $<$ or $>$ the null value) or two-sided ($\mu$ $\ne$ the null value), and the choice depends on the research question.
+    + Always construct hypotheses about population parameters (e.g. population proportion, $p$) and not the sample statistics (e.g. sample proportion, $\hat{p}$). Note that the population parameter is unknown while the sample statistic is measured using the observed data and hence there is no point in hypothesizing about it.
+    + Define the null value as the value the parameter is set to equal in the null hypothesis.
+    + Note that the alternative hypothesis might be one-sided ($\mu$ $<$ or $>$ the null value) or two-sided ($\mu$ $\ne$ the null value), and the choice depends on the research question.
 - Define a p-value as the conditional probability of obtaining a sample statistic at least as extreme as the one observed given that the null hypothesis is true. $\text{p-value} = \text{P(observed or more extreme sample statistic}~|~H_0 \text{ true)}$
 - Calculate a p-value as the area under the normal curve beyond the observed sample proportion (either in one tail or both, depending on the alternative hypothesis). Note that in doing so you can use a Z score, where $Z = \frac{sample~statistic - null~value}{SE} = \frac{\bar{x} - \mu_0}{SE}$
- + Always sketch the normal curve when calculating the p-value, and shade the appropriate area(s) depending on whether the alternative hypothesis is one- or two-sided.
+    + Always sketch the normal curve when calculating the p-value, and shade the appropriate area(s) depending on whether the alternative hypothesis is one- or two-sided.
 - Infer that if a confidence interval does not contain the null value the null hypothesis should be rejected in favor of the alternative.
 - Compare the p-value to the significance level to make a decision between the hypotheses:
- + If the p-value $<$ the significance level, reject the null hypothesis since this means that obtaining a sample statistics at least as extreme as the observed data is extremely unlikely to happen just by chance, and conclude that the data provides evidence for the alternative hypothesis.
- + If the p-value $>$ the significance level, fail to reject the null hypothesis since this means that obtaining a sample statistics at least as extreme as the observed data is quite likely to happen by chance, and conclude that the data does not provide evidence for the alternative hypothesis.
- + Note that we can never “accept” the null hypothesis since the hypothesis testing framework does not allow us to confirm it.
+    + If the p-value $<$ the significance level, reject the null hypothesis since this means that obtaining a sample statistics at least as extreme as the observed data is extremely unlikely to happen just by chance, and conclude that the data provides evidence for the alternative hypothesis.
+    + If the p-value $>$ the significance level, fail to reject the null hypothesis since this means that obtaining a sample statistics at least as extreme as the observed data is quite likely to happen by chance, and conclude that the data does not provide evidence for the alternative hypothesis.
+    + Note that we can never “accept” the null hypothesis since the hypothesis testing framework does not allow us to confirm it.
 - Note that the conclusion of a hypothesis test might be erroneous regardless of the decision we make.
- + Define a Type 1 error as rejecting the null hypothesis when the null hypothesis is actually true.
- + Define a Type 2 error as failing to reject the null hypothesis when the alternative hypothesis is actually true.
+    + Define a Type 1 error as rejecting the null hypothesis when the null hypothesis is actually true.
+    + Define a Type 2 error as failing to reject the null hypothesis when the alternative hypothesis is actually true.
 - Choose a significance level depending on the risks associated with Type 1 and Type 2 errors.
- + Use a smaller $\alpha$ is Type 1 error is relatively riskier.
- + Use a larger $\alpha$ is Type 2 error is relatively riskier.
+    + Use a smaller $\alpha$ is Type 1 error is relatively riskier.
+    + Use a larger $\alpha$ is Type 2 error is relatively riskier.
 - Formulate the framework for statistical inference using hypothesis testing and nearly normal point estimates:
 1. Set up the hypotheses first in plain language and then using appropriate notation.
 2. Identify the appropriate sample statistic that can be used as a point estimate for the parameter of interest.
@@ -161,9 +161,9 @@ $H_A:$ The distribution of the variable does not follow the hypothesized distrib
 - Calculate the chi-square test statistic as $\chi = \sum_{i = 1}^{k} \frac{(\text{observed count} - \text{expected count})^2}{\text{expected count}}$, where $k$ is the number of cells.
 - Note that the chi-square distribution is right skewed with one parameter: degrees of freedom. In the case of a goodness of fit test, $df = # \text{of categories} - 1$.
 - List the conditions necessary for performing a chi-square test (goodness of fit or independence)
- + the observations should be independent
- + expected counts for each cell should be at least 5
- + degrees of freedom should be at least 2 (if not, use methods for evaluating proportions)
+    + the observations should be independent
+    + expected counts for each cell should be at least 5
+    + degrees of freedom should be at least 2 (if not, use methods for evaluating proportions)
 - Describe how to use the chi-square table to obtain a p-value.
 When evaluating the independence of two categorical variables where at least one has more than two levels, use a chi-square test of independence.
 - $H_0:$ The two variables are independent.
@@ -226,35 +226,35 @@ and check if they are met using graphical diagnostics.
 - Plot the explanatory variable ($x$) on the x-axis and the response variable ($y$) on the y-axis, and fit a linear regression model $y = \beta_0 + \beta_1 x$ where $\beta_0$ is the intercept, and $\beta_1$ is the slope.
 - Note that the point estimates (estimated from observed data) for $\beta_0$ and $\beta_1$ are $b_0$ and $b_1$, respectively.
 - When describing the association between two numerical variables, evaluate
- + direction: positive ($x \uparrow, y \uparrow$), negative ($x \downarrow, y \uparrow$)
- + form: linear or not
- + strength: determined by the scatter around the underlying relationship
+    + direction: positive ($x \uparrow, y \uparrow$), negative ($x \downarrow, y \uparrow$)
+    + form: linear or not
+    + strength: determined by the scatter around the underlying relationship
 - Define correlation as the \emph{linear} association between two numerical variables.
 - Note that a relationship that is nonlinear is simply called an association.
 - Note that correlation coefficient ($r$, also called Pearson’s $r$) the following properties:
- + the magnitude (absolute value) of the correlation coefficient measures the strength of the linear association between two numerical variables
- + the sign of the correlation coefficient indicates the direction of association
- + the correlation coefficient is always between -1 and 1, inclusive, with -1 indicating perfect negative linear association, +1 indicating perfect positive linear association, and 0 indicating no \emph{linear} relationship
- + the correlation coefficient is unitless, since the correlation coefficient is unitless, it is not affected by changes in the center or scale of either variable (such as unit conversions)
- + the correlation of X with Y is the same as of Y with X
- + the correlation coefficient is sensitive to outliers
+    + the magnitude (absolute value) of the correlation coefficient measures the strength of the linear association between two numerical variables
+    + the sign of the correlation coefficient indicates the direction of association
+    + the correlation coefficient is always between -1 and 1, inclusive, with -1 indicating perfect negative linear association, +1 indicating perfect positive linear association, and 0 indicating no \emph{linear} relationship
+    + the correlation coefficient is unitless, since the correlation coefficient is unitless, it is not affected by changes in the center or scale of either variable (such as unit conversions)
+    + the correlation of X with Y is the same as of Y with X
+    + the correlation coefficient is sensitive to outliers
 - Recall that correlation does not imply causation.
 - Define residual ($e$) as the difference between the observed ($y$) and predicted ($\hat{y}$) values of the response variable. $e_i = y_i - \hat{y}_i$
 - Define the least squares line as the line that minimizes the sum of the squared residuals, and list conditions necessary for fitting such line:
- + linearity
- + nearly normal residuals
- + constant variability
+    + linearity
+    + nearly normal residuals
+    + constant variability
 - Define an indicator variable as a binary explanatory variable (with two levels).
 - Calculate the estimate for the slope ($b_1$) as $b_1 = R\frac{s_y}{s_x}$, where $r$ is the correlation coefficient, $s_y$ is the standard deviation of the response variable, and $s_x$ is the standard deviation of the explanatory variable.
 - Interpret the slope as
- + “For each unit increase in $x$, we would expect $y$ to increase/decrease on average by $|b_1|$ units” when $x$ is numerical.
- + “The average increase/decrease in the response variable when between the baseline level and the other level of the explanatory variable is $|b_1|$.” when $x$ is categorical.
+    + “For each unit increase in $x$, we would expect $y$ to increase/decrease on average by $|b_1|$ units” when $x$ is numerical.
+    + “The average increase/decrease in the response variable when between the baseline level and the other level of the explanatory variable is $|b_1|$.” when $x$ is categorical.
 - Note that whether the response variable increases or decreases is determined by the sign of $b_1$.
 - Note that the least squares line always passes through the average of the response and explanatory variables ($\bar{x},\bar{y}$).
 - Use the above property to calculate the estimate for the slope ($b_0$) as $b_0 = \bar{y} - b_1 \bar{x}$, where $b_1$ is the slope, $\bar{y}$ is the average of the response variable, and $\bar{x}$ is the average of explanatory variable.
 - Interpret the intercept as
- + “When $x = 0$, we would expect $y$ to equal, on average, $b_0$.” when $x$ is numerical.
- + “The expected average value of the response variable for the reference level of the explanatory variable is $b_0$.” when $x$ is categorical.
+    + “When $x = 0$, we would expect $y$ to equal, on average, $b_0$.” when $x$ is numerical.
+    + “The expected average value of the response variable for the reference level of the explanatory variable is $b_0$.” when $x$ is categorical.
 - Predict the value of the response variable for a given value of the explanatory variable, $x^\star$, by plugging in $x^\star$ in the in the linear model: $\hat{y} = b_0 + b_1 x^\star$
 - Only predict for values of $x^\star$ that are in the range of the observed data.
 - Do not extrapolate beyond the range of the data, unless you are confident that the linear pattern continues.
